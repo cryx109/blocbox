@@ -454,7 +454,7 @@ footer .logo{
    left: 5px;
    top: 15px;
  }
- 
+
 @media (min-width:992px) {
    .left-nav {
      height: 100vh;
@@ -674,7 +674,7 @@ footer .logo{
 
 /* ACTIVE LINK */
 a:active {
-  color: 000000;
+  background: #000000;
 }
 
 
