@@ -47,9 +47,7 @@ p {
   min-height: 1px;
   margin: 0 2% 20px;
 }
-.nav-buttons .bb-logo {
-  width: 46%;
-}
+
 
 
 
@@ -65,6 +63,13 @@ p {
    header nav ul {
     float: none;
    }
+ }
+ @media (max-width: 768px) {
+   header nav ul {
+    float:none!important;
+
+   }
+
  }
  @media (min-width: 992px) {
    .container {
@@ -494,7 +499,7 @@ footer .logo{
 .left-nav {
   height: 100%;
   width: 280px;
-  position: absolute;
+  position: fixed;
     -webkit-transition: all 0.3s ease-in-out;
    -moz-transition: all 0.3s ease-in-out;
    -o-transition: all 0.3s ease-in-out;
@@ -507,6 +512,8 @@ footer .logo{
  .left-nav.open {
    display:block;
    width:280px;
+   background: #34495E;
+   background-image: linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
    -webkit-transition: all 0.3s ease-in-out;
    -moz-transition: all 0.3s ease-in-out;
    -o-transition: all 0.3s ease-in-out;
@@ -518,7 +525,7 @@ footer .logo{
      z-index: 100;
  }
  .hamburger {
-   position:absolute;
+   position:fixed;
    z-index: 1000;
    background:#34495E;
    color:#FFF;
@@ -564,6 +571,9 @@ footer .logo{
   display: block;
   text-align: center;
 }
+ .left-nav .site-logo img {
+  max-width: 90%;
+ }
 .left-nav .items {
   padding: 0 6%;
 }
@@ -625,6 +635,14 @@ footer .logo{
   margin-right: 10px;
   margin-top: 8px;
 }
+
+
+ .left-nav .active {
+  background-color: rgba(255,255,255,0.3);
+  padding: 3px;
+ }
+
+
 
 /* CONTENT */
 .content {

@@ -42,8 +42,21 @@
     </div>
     <div class="settings">
       <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg">
-      <p>Crystal Kennedy</p>
-      <a href="#"><i class="fa fa-cog"></i></a>
+      <p style="color:#ffffff">Crystal Kennedy</p>
+
+
+        <ul class="menu-up">
+          <li>
+            <a href="#"><i class="fa fa-cog"></i></a>
+            <ul>
+              <li><a href="#"><i class="fa fa-gear"></i> My Account</a></li>
+            <li><a href="#"><i class="fa fa-group"></i> Collaborators</a></li>
+            <li><a href="#"><i class="fa fa-sign-out"></i> Sign Out</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      
     </div>
   </nav>
 <main role="main">
@@ -127,8 +140,10 @@
   </main>
   <script src="js/jquery-2.2.0.min.js"></script>
   <script src="js/dropit.js"></script>
+  <script src="js/dropitup.js"></script>
   <script type="text/javascript">
     $(".menu") .dropit();
+     $(".menu-up") .dropitup();
     $( "#menu" ).click(function() {
          $("#left-nav").toggleClass("open", 200);
      });
