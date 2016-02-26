@@ -47,27 +47,48 @@ p {
   min-height: 1px;
   margin: 0 2% 20px;
 }
+.nav-buttons .bb-logo {
+  width: 46%;
+}
 
+
+
+/* MEDIA QUERIES */
 
 @media (min-width: 768px) {
    .container {
      width: 750px;
+   }
+   .one-half {
+    width: 46%;
+   }
+   header nav ul {
+    float: none;
    }
  }
  @media (min-width: 992px) {
    .container {
      width: 970px;
    }
-   .one-half {
-     width:46%;
-   }
+
    .one-third {
      width:29.33333%;
    }
    .one-fourth {
      width:21%;
    }
+   footer {
+    height: 100px;
+   }
+   footer p, footer nav ul {
+    padding: 2em 0;
+    text-align: left;
+   }
+   footer .logo {
+    padding: 2em 0 2em 1.5em;
+   }
  }
+
  @media (min-width: 1200px) {
    .container {
      width: 1170px;
@@ -78,7 +99,53 @@ p {
      width: 1170px;
    }
  }
+ @media (min-width: 2000px) {
+  .container {
+    width: 1920px;
+  }
+ }
+/* more media queries */
+@media (max-width: 1023px) {
+  header .bb-logo {
+    text-align: center;
+  }
 
+  header .nav-buttons {
+    text-align: center;
+  }
+
+  header nav ul {
+    float: none;
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+
+  header .hero h1 {
+  font-size:36px;
+  margin-top: 50px;
+  }
+
+  header .hero p {
+    font-size: 18px;
+  }
+
+  .benefits .benefits-div {
+    height: 350px;
+  }
+
+   .benefits .benefits-text {
+    position: relative;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 75px 0;
+  }
+
+  footer .copyright-block {
+    text-align: center;
+  }
+}
 
  /* Header */
  header {
@@ -136,6 +203,7 @@ header .hero {
  header .hero img {
    display: block;
    margin:3em auto 0;
+   max-width: 100%;
  }
 
  /* BUTTONS */
@@ -336,7 +404,7 @@ footer {
   background-image: linear-gradient(to top,
       #3498DB 0%, #3498DB 50%, #34495E 50%, #34495E 100%);
   color: #ffffff;
-  height: 150px;
+  height: 100px;
   position: relative;
   overflow: hidden;
   z-index: 0;
@@ -347,6 +415,13 @@ footer p, footer nav ul {
   text-align: center;
   margin: 10px auto 0;
 }
+footer p {
+  text-align: left;
+}
+
+footer nav ul {
+  text-align: center;
+}
 footer nav ul li {
   list-style-type: none;
   display: inline;
@@ -355,14 +430,14 @@ footer nav ul li a {
   color: #ffffff;
   text-decoration: none;
 }
-footer .right-footer-block {
-  background-color: transparent;
-}
+
 footer .logo{
-  padding: 2.35em 0;
-  margin: 0 auto;
+  padding: 2.25em 0;
+  margin: auto;
   display: block;
 }
+
+
 
 @media (min-width: 992px) {
   footer{
